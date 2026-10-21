@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 600" width="1280" height="600" role="img" aria-labelledby="t d">
+<title id="t">O Cay aberto: o player de música</title><desc id="d">A ilha expandida mostrando a música que está tocando, com capa, título, progresso, controles e o gato balançando no ritmo. Anotações explicam como cada parte se move. Abaixo, o Theme.cs com as molas.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050506"/><stop offset=".6" stop-color="#0F0C19"/><stop offset="1" stop-color="#1D1436"/></linearGradient>
+<radialGradient id="g1"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".34"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2"><stop offset="0" stop-color="#A78BFA" stop-opacity=".22"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#FFFFFF" fill-opacity=".055"/></pattern>
+<clipPath id="clip"><rect width="1280" height="600" rx="24"/></clipPath>
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI Variable Text','Segoe UI',Roboto,Helvetica,Arial,sans-serif} .m{font-family:'Cascadia Mono','SF Mono',Consolas,'Liberation Mono',Menlo,monospace}
+.o1{animation:d1 14s ease-in-out infinite alternate} .o2{animation:d2 18s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(160px,40px)}} @keyframes d2{to{transform:translate(-180px,-30px)}}
+@media (prefers-reduced-motion:reduce){.o1,.o2{animation:none}}
+</style>
+<linearGradient id="wp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E1840"/><stop offset=".55" stop-color="#36286A"/><stop offset="1" stop-color="#5A3A8E"/></linearGradient>
+<linearGradient id="art" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="46"/></filter>
+<filter id="drop" x="-30%" y="-30%" width="160%" height="190%"><feGaussianBlur stdDeviation="16"/></filter>
+<clipPath id="isl"><path d="M-234 0H234A14 14 0 0 0 220 14V138A30 30 0 0 1 190 168H-190A30 30 0 0 1 -220 138V14A14 14 0 0 0 -234 0Z"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+<rect width="1280" height="600" fill="url(#bg)"/><rect width="1280" height="600" fill="url(#dots)"/>
+
+
+<rect width="1280" height="600" fill="url(#wp)"/>
+<g filter="url(#soft)">
+  <ellipse class="o1" cx="330" cy="430" rx="380" ry="150" fill="#8B5CF6" fill-opacity=".55" transform="rotate(-16 330 430)"/>
+  <ellipse class="o2" cx="1000" cy="470" rx="360" ry="140" fill="#F0A5C8" fill-opacity=".3" transform="rotate(18 1000 470)"/>
+  <ellipse cx="720" cy="230" rx="300" ry="110" fill="#6EA8FE" fill-opacity=".2"/>
+</g>
+<rect width="1280" height="600" fill="url(#dots)"/>
+<g>
+  <rect x="226" y="360" width="828" height="230" rx="14" fill="#0B0A12" fill-opacity=".62" stroke="#FFFFFF" stroke-opacity=".12"/>
+  <path d="M226 374 A14 14 0 0 1 240 360 H1040 A14 14 0 0 1 1054 374 V394 H226 Z" fill="#FFFFFF" fill-opacity=".06"/>
+  <text x="250" y="382" font-size="12.5" fill="#A9A3C2">Theme.cs · Cay</text>
+  <g stroke="#A9A3C2" stroke-width="1.3" fill="none"><path d="M968 377 h10"/><rect x="996" y="372" width="9" height="9"/><path d="M1024 372 l9 9 M1033 372 l-9 9"/></g>
+  <text class="m" x="250" y="426" font-size="13"><tspan fill="#6E6E73">// Theme.cs: o movimento inteiro mora aqui</tspan></text><text class="m" x="250" y="450" font-size="13"><tspan fill="#A78BFA">public const </tspan><tspan fill="#7DD3FC">float </tspan><tspan fill="#E5E1F5">ExpandDamping = </tspan><tspan fill="#FDBA74">0.78f</tspan><tspan fill="#E5E1F5">;</tspan></text><text class="m" x="250" y="474" font-size="13"><tspan fill="#A78BFA">public static readonly </tspan><tspan fill="#7DD3FC">TimeSpan </tspan><tspan fill="#E5E1F5">ExpandPeriod = TimeSpan.FromMilliseconds(</tspan><tspan fill="#FDBA74">58</tspan><tspan fill="#E5E1F5">);</tspan></text><text class="m" x="250" y="498" font-size="13"><tspan fill="#A78BFA">public const </tspan><tspan fill="#7DD3FC">float </tspan><tspan fill="#E5E1F5">AlertDamping = </tspan><tspan fill="#FDBA74">0.62f</tspan><tspan fill="#E5E1F5">;  </tspan><tspan fill="#6E6E73">// quica mais quando chega mensagem</tspan></text><text class="m" x="250" y="522" font-size="13"><tspan fill="#A78BFA">public static readonly </tspan><tspan fill="#7DD3FC">IslandShape </tspan><tspan fill="#E5E1F5">MediaExpanded = new(new(</tspan><tspan fill="#FDBA74">440</tspan><tspan fill="#E5E1F5">, </tspan><tspan fill="#FDBA74">168</tspan><tspan fill="#E5E1F5">), </tspan><tspan fill="#FDBA74">30</tspan><tspan fill="#E5E1F5">, </tspan><tspan fill="#FDBA74">14</tspan><tspan fill="#E5E1F5">);</tspan></text>
+</g>
+<path transform="translate(640 14) scale(1.6)" d="M-234 0H234A14 14 0 0 0 220 14V138A30 30 0 0 1 190 168H-190A30 30 0 0 1 -220 138V14A14 14 0 0 0 -234 0Z" fill="#000" opacity=".55" filter="url(#drop)"/>
+<g transform="translate(640 0) scale(1.6)">
+  <path d="M-234 0H234A14 14 0 0 0 220 14V138A30 30 0 0 1 190 168H-190A30 30 0 0 1 -220 138V14A14 14 0 0 0 -234 0Z" fill="#000"/>
+  <g clip-path="url(#isl)">
+    <rect x="-198" y="18" width="60" height="60" rx="12" fill="url(#art)"/>
+    <circle cx="-160" cy="40" r="11" fill="#FDE68A"/><circle cx="-155" cy="36" r="10" fill="url(#art)"/>
+    <circle cx="-184" cy="32" r="1.2" fill="#FFFFFF"/><circle cx="-176" cy="62" r="1" fill="#FFFFFF" fill-opacity=".8"/><circle cx="-150" cy="64" r="1.3" fill="#FFFFFF" fill-opacity=".7"/>
+    <text x="-124" y="38" font-size="15" font-weight="600" fill="#F5F5F7">Clair de Lune</text>
+    <text x="-124" y="59" font-size="13" fill="#98989D">Debussy · Suite bergamasque</text>
+    <g transform="translate(182 46)"><g><animateTransform type="rotate" attributeName="transform" values="-5;5;-5" keyTimes="0;0.5;1" dur="1.8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/><g transform="translate(0 0) scale(0.16) translate(-128 -136)"><g transform="rotate(0 128 152)"><path d="M80 200 A48 48 0 0 1 45.99 118.13 A6 6 0 0 0 47.54 115.45 L57.72 77.42 A14 14 0 0 1 81.15 71.15 L112.24 102.24 A6 6 0 0 0 116.49 104 L139.51 104 A6 6 0 0 0 143.76 102.24 L174.85 71.15 A14 14 0 0 1 198.28 77.42 L208.46 115.45 A6 6 0 0 0 210.01 118.13 A48 48 0 0 1 176 200 Z" fill="#F5F5F7"></path><ellipse cx="97" cy="154" rx="19" ry="19" fill="#000"><animate attributeName="ry" values="19;19;1.52;1.52;19;19" keyTimes="0;0.7;0.73;0.75;0.79;1" dur="4.6s" repeatCount="indefinite"/></ellipse><ellipse cx="159" cy="154" rx="19" ry="19" fill="#000"><animate attributeName="ry" values="19;19;1.52;1.52;19;19" keyTimes="0;0.7;0.73;0.75;0.79;1" dur="4.6s" repeatCount="indefinite"/></ellipse></g></g></g></g>
+    <g opacity="0"><path d="M0 0 V-11 L7 -9 V-6 L0 -8" fill="none" stroke="#F5F5F7" stroke-width="1.6" stroke-linejoin="round"/><ellipse cx="-2.2" cy="0.5" rx="3" ry="2.3" fill="#F5F5F7"/><animateTransform type="translate" attributeName="transform" values="196 34;206 6" keyTimes="0;1" dur="2.6s" repeatCount="indefinite" calcMode="spline" keySplines=".2 0 .4 1" begin="0s"/><animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.25;1" dur="2.6s" repeatCount="indefinite" begin="0s"/></g><g opacity="0"><path d="M0 0 V-11 L7 -9 V-6 L0 -8" fill="none" stroke="#F5F5F7" stroke-width="1.6" stroke-linejoin="round"/><ellipse cx="-2.2" cy="0.5" rx="3" ry="2.3" fill="#F5F5F7"/><animateTransform type="translate" attributeName="transform" values="196 34;184 6" keyTimes="0;1" dur="2.6s" repeatCount="indefinite" calcMode="spline" keySplines=".2 0 .4 1" begin="1.3s"/><animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.25;1" dur="2.6s" repeatCount="indefinite" begin="1.3s"/></g>
+    <text x="-198" y="106" class="m" font-size="11" fill="#98989D">1:24</text>
+    <text x="198" y="106" text-anchor="end" class="m" font-size="11" fill="#98989D">-3:42</text>
+    <rect x="-154" y="100" width="308" height="4" rx="2" fill="#FFFFFF" fill-opacity=".18"/>
+    <rect x="-154" y="100" width="84" height="4" rx="2" fill="#F5F5F7"><animate attributeName="width" values="84;292" keyTimes="0;1" dur="60s" repeatCount="indefinite"/></rect>
+    <g><animateTransform type="translate" attributeName="transform" values="61 141;61 141;0 141;0 141;-61 141;-61 141;0 141;0 141;61 141" keyTimes="0;0.18;0.26;0.43;0.51;0.68;0.76;0.93;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1"/><circle r="21" fill="#FFFFFF" fill-opacity=".12"/></g>
+    <g fill="#F5F5F7">
+      <path d="M-58 141 l9 -6.5 v13 Z M-67 141 l9 -6.5 v13 Z"/>
+      <rect x="-6" y="132" width="4.2" height="18" rx="1.4"/><rect x="2" y="132" width="4.2" height="18" rx="1.4"/>
+      <path d="M58 141 l-9 -6.5 v13 Z M67 141 l-9 -6.5 v13 Z"/>
+    </g>
+    <g><animateTransform type="translate" attributeName="transform" values="61 141;61 141;0 141;0 141;-61 141;-61 141;0 141;0 141;61 141" keyTimes="0;0.18;0.26;0.43;0.51;0.68;0.76;0.93;1" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1"/><g transform="translate(6 7) scale(.62)"><path transform="translate(0 0) scale(1)" d="M0 0 L0 17 L4.6 13 L7.6 20 L10.2 18.9 L7.3 12.4 L13 12.4 Z" fill="#FFFFFF" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></g></g>
+  </g>
+</g>
+<path d="M260 69 L371.2 76.8" stroke="#C4B5FD" stroke-opacity=".7" stroke-dasharray="3 4" fill="none"/><circle cx="371.2" cy="76.8" r="4" fill="#C4B5FD"/><circle cx="371.2" cy="76.8" r="4" fill="none" stroke="#C4B5FD" stroke-width="2"><animate attributeName="r" values="4;16" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="0s"/><animate attributeName="opacity" values="0.9;0" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="0s"/></circle><text x="248" y="74" text-anchor="end" font-size="15" font-weight="600" fill="#FFFFFF">a capa troca com quique</text><text x="248" y="94" text-anchor="end" class="m" font-size="12.5" fill="#D7CEF5">e o texto entra em cascata</text>
+<path d="M260 163 L393.6 163.2" stroke="#C4B5FD" stroke-opacity=".7" stroke-dasharray="3 4" fill="none"/><circle cx="393.6" cy="163.2" r="4" fill="#C4B5FD"/><circle cx="393.6" cy="163.2" r="4" fill="none" stroke="#C4B5FD" stroke-width="2"><animate attributeName="r" values="4;16" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="0.8s"/><animate attributeName="opacity" values="0.9;0" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="0.8s"/></circle><text x="248" y="168" text-anchor="end" font-size="15" font-weight="600" fill="#FFFFFF">o progresso anda sozinho</text><text x="248" y="188" text-anchor="end" class="m" font-size="12.5" fill="#D7CEF5">animação linear no compositor</text>
+<path d="M1020 51 L931.2 54.4" stroke="#C4B5FD" stroke-opacity=".7" stroke-dasharray="3 4" fill="none"/><circle cx="931.2" cy="54.4" r="4" fill="#C4B5FD"/><circle cx="931.2" cy="54.4" r="4" fill="none" stroke="#C4B5FD" stroke-width="2"><animate attributeName="r" values="4;16" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="0.4s"/><animate attributeName="opacity" values="0.9;0" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="0.4s"/></circle><text x="1032" y="56" text-anchor="start" font-size="15" font-weight="600" fill="#FFFFFF">o gato curte a música</text><text x="1032" y="76" text-anchor="start" class="m" font-size="12.5" fill="#D7CEF5">balança e pisca de vez em quando</text>
+<path d="M1020 209 L969.6 236.8" stroke="#C4B5FD" stroke-opacity=".7" stroke-dasharray="3 4" fill="none"/><circle cx="969.6" cy="236.8" r="4" fill="#C4B5FD"/><circle cx="969.6" cy="236.8" r="4" fill="none" stroke="#C4B5FD" stroke-width="2"><animate attributeName="r" values="4;16" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="1.2s"/><animate attributeName="opacity" values="0.9;0" keyTimes="0;1" dur="2.4s" repeatCount="indefinite" begin="1.2s"/></circle><text x="1032" y="214" text-anchor="start" font-size="15" font-weight="600" fill="#FFFFFF">abre com mola</text><text x="1032" y="234" text-anchor="start" class="m" font-size="12.5" fill="#D7CEF5">ζ 0,78 · período 58 ms</text>
+<g>
+  <rect y="552" width="1280" height="48" fill="#0E0D14" fill-opacity=".9"/>
+  <rect x="490" y="563" width="26" height="26" rx="6" fill="#FFFFFF" fill-opacity=".1"/><rect x="496.25" y="569.75" width="5.5" height="5.5" rx="1" fill="#7DD3FC"/><rect x="503.25" y="569.75" width="5.5" height="5.5" rx="1" fill="#7DD3FC"/><rect x="496.25" y="576.75" width="5.5" height="5.5" rx="1" fill="#7DD3FC"/><rect x="503.25" y="576.75" width="5.5" height="5.5" rx="1" fill="#7DD3FC"/>
+  <rect x="528" y="563" width="26" height="26" rx="6" fill="#5B8DEF" fill-opacity=".85"/>
+  <rect x="566" y="563" width="26" height="26" rx="6" fill="#E8A33D" fill-opacity=".85"/>
+  <rect x="604" y="563" width="26" height="26" rx="6" fill="#4CAF7A" fill-opacity=".85"/>
+  <rect x="642" y="563" width="26" height="26" rx="6" fill="#D9534F" fill-opacity=".85"/>
+  <rect x="604" y="593" width="26" height="3" rx="1.5" fill="#A78BFA"/>
+  <g transform="translate(1162 575) scale(0.09) translate(-128 -136)"><g transform="rotate(0 128 152)"><path d="M80 200 A48 48 0 0 1 45.99 118.13 A6 6 0 0 0 47.54 115.45 L57.72 77.42 A14 14 0 0 1 81.15 71.15 L112.24 102.24 A6 6 0 0 0 116.49 104 L139.51 104 A6 6 0 0 0 143.76 102.24 L174.85 71.15 A14 14 0 0 1 198.28 77.42 L208.46 115.45 A6 6 0 0 0 210.01 118.13 A48 48 0 0 1 176 200 Z" fill="#F5F5F7"></path><ellipse cx="97" cy="154" rx="19" ry="19" fill="#0E0D14"><animate attributeName="ry" values="19;19;1.52;1.52;19;19" keyTimes="0;0.5;0.53;0.55;0.59;1" dur="5.2s" repeatCount="indefinite"/></ellipse><ellipse cx="159" cy="154" rx="19" ry="19" fill="#0E0D14"><animate attributeName="ry" values="19;19;1.52;1.52;19;19" keyTimes="0;0.5;0.53;0.55;0.59;1" dur="5.2s" repeatCount="indefinite"/></ellipse></g></g>
+  <text x="1240" y="581" text-anchor="end" font-size="12.5" fill="#F5F5F7">09:41</text>
+</g>
+</g>
+<rect x=".5" y=".5" width="1279" height="599" rx="23.5" fill="none" stroke="#FFFFFF" stroke-opacity=".08"/>
+</svg>
