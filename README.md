@@ -8,7 +8,7 @@
 
 <br>
 
-<a href="https://github.com/Rudhery/cay/releases/latest/download/Rudhery.Cay-win-Setup.exe"><img src="imagens/baixar.svg" alt="Baixar o Cay para Windows" width="300"></a>
+<a href="https://github.com/Rudhery/cay/releases/latest/download/Cay-Setup.exe"><img src="imagens/baixar.svg" alt="Baixar o Cay para Windows" width="300"></a>
 
 </div>
 
@@ -51,8 +51,9 @@ Baixe na [última versão](https://github.com/Rudhery/cay/releases/latest):
 
 | Arquivo | Para quem |
 |---|---|
-| **`Rudhery.Cay-win-Setup.exe`** (~65 MB) | todo mundo: já traz tudo o que precisa |
-| `Rudhery.Cay-leve-Setup.exe` (~20 MB) | quem já tem o .NET 10 Desktop Runtime (o instalador baixa se faltar) |
+| **`Cay-Setup.exe`** (~65 MB) | todo mundo: já traz tudo o que precisa |
+| `Cay-Setup-Leve.exe` (~20 MB) | quem já tem o .NET 10 Desktop Runtime (o instalador baixa se faltar) |
+| `Cay-Portatil.zip` | levar num pendrive, sem instalar |
 
 Requer **Windows 10 (2004) ou 11**. O Cay se atualiza sozinho: quando sai uma versão nova, baixa em segundo plano e
 aplica na próxima vez que fechar.
@@ -89,6 +90,6 @@ O Cay é **gratuito** para uso pessoal e comercial. O código-fonte não é dist
 
 **Cay** is a native dynamic island for Windows: a black pill glued to the top of the screen that shows what matters
 right now (the song that's playing, the message that just arrived, your build's progress) with a cat that lives up
-there. Download the [latest release](https://github.com/Rudhery/cay/releases/latest) (`Rudhery.Cay-win-Setup.exe`).
+there. Download the [latest release](https://github.com/Rudhery/cay/releases/latest) (`Cay-Setup.exe`).
 Windows 10 (2004) or 11. Free to use; the source code is not distributed. The app speaks English or Portuguese
 (automatic from Windows).
