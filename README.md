@@ -34,6 +34,9 @@ E lá em cima mora um gato: os dois-pontos da hora viraram os olhos dele.
 - **Timer e Pomodoro**, **próxima reunião** pela agenda, **chamada em andamento**, **downloads do navegador**,
   **builds do GitHub** e **site vigiado** ao vivo.
 - **Volume, Bluetooth, bateria, microfone e câmera em uso**, **não perturbe**, **clima**.
+- **Bolhas** que se separam da ilha para o que roda por trás (bateria do fone Bluetooth com qualquer áudio, timer,
+  builds de vários repositórios); passe o mouse numa bolha e abre a página dela, como a **página Bluetooth** com a
+  bateria de cada aparelho.
 - **Modo fio**: sobre janela maximizada, a ilha vira uma alça fina (ou só nos apps que você escolher).
 - **Personalização**: material sólido, fumê ou vidro, cor de destaque, inglês ou português.
 
