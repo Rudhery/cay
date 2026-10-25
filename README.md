@@ -39,6 +39,23 @@ E lá em cima mora um gato: os dois-pontos da hora viraram os olhos dele.
   bateria de cada aparelho.
 - **Modo fio**: sobre janela maximizada, a ilha vira uma alça fina (ou só nos apps que você escolher).
 - **Personalização**: material sólido, fumê ou vidro, cor de destaque, inglês ou português.
+- **Navegação no topo**: passe o mouse e uma barra com ícones animados leva a qualquer página; o **Início** mostra o
+  que importa agora e uma grade com o resto.
+- **Tarefas** com prazo ("amanhã 15h") e aviso na hora, **Pergunte ao Cay** (`Ctrl+Alt+Espaço`, qualquer modelo,
+  inclusive local) e o **resumo da semana** toda segunda.
+
+## Para devs
+
+- **Agentes de IA na ilha**: o Claude Code e o Codex pedem permissão na ilha (Negar/Permitir), as perguntas com
+  opções viram botões, e ela avisa quando terminam. Os **limites do plano** (5 horas e semana) ficam sempre à vista.
+- **GitHub**: **Entrar com GitHub** num clique (sem token para colar), seus PRs com os checks, revisões pedidas e o
+  quadriculado de contribuições.
+- **Sentry**: erro novo ou que voltou aparece na hora, com Resolver e Ignorar.
+- **Deploys** da Vercel, da Netlify e do GitHub como atividade ao vivo, com aviso quando fica no ar ou falha.
+- **Git do projeto atual** (branch, alterações, Pull/Push) e **comandos rápidos** ("Testes · npm test") com o
+  resultado na ilha.
+- **Docker**: container que cai vira aviso com Reiniciar e Logs.
+- **Issues** atribuídas a você no GitHub, no Linear e no Jira entram na lista de tarefas.
 
 ## O gato
 
@@ -46,7 +63,8 @@ E lá em cima mora um gato: os dois-pontos da hora viraram os olhos dele.
 
 Ele dorme ao lado da hora, acorda quando você chega, inclina a cabeça quando chega mensagem, dança com a música,
 ronrona com carinho do mouse, come o arquivo que vai para a prateleira, sonha com um peixe de noite e põe abóbora no
-Halloween. Cinco cliques rápidos nele e veja o que acontece.
+Halloween. Cinco cliques rápidos nele e veja o que acontece. Tem **guarda-roupa** (`Ctrl+Alt+G`) com roupas para
+experimentar e, se quiser, ele desce para morar em cima da barra de tarefas.
 
 ## Instalando
 
@@ -63,7 +81,9 @@ aplica na próxima vez que fechar.
 
 **Privacidade:** o Cay não manda nada sobre você para lugar nenhum. Ele só acessa a internet para o clima
 (Open-Meteo, e ipwho.is para estimar a cidade quando a localização do Windows está desligada), a letra das músicas
-(LRCLIB), o que você conectar (agenda, NextChat, site vigiado, GitHub) e para procurar atualização aqui no GitHub. O conteúdo copiado nunca sai do computador.
+(LRCLIB), o que você conectar (agenda, NextChat, site vigiado, GitHub, Sentry, Vercel, Netlify, Linear, Jira, o
+modelo do chat) e para procurar atualização aqui no GitHub. Chaves e tokens ficam cifrados com a sua conta do Windows.
+O conteúdo copiado nunca sai do computador.
 
 ## Atalhos
 
@@ -75,6 +95,8 @@ aplica na próxima vez que fechar.
 | `Win+Alt+V` | histórico de copiados |
 | `Win+Alt+T` | Pomodoro, pausar e continuar |
 | `Win+Shift+C` | conta-gotas |
+| `Ctrl+Alt+Espaço` | Pergunte ao Cay |
+| `Ctrl+Alt+G` | guarda-roupa do gato |
 
 Botão direito na ilha ou no gato da bandeja: configurações, modo fio, letra das músicas, monitor e mais.
 
@@ -93,6 +115,7 @@ O Cay é **gratuito** para uso pessoal e comercial. O código-fonte não é dist
 
 **Cay** is a native dynamic island for Windows: a black pill glued to the top of the screen that shows what matters
 right now (the song that's playing, the message that just arrived, your build's progress) with a cat that lives up
-there. Download the [latest release](https://github.com/Rudhery/cay/releases/latest) (`Cay-Setup.exe`).
+there. For developers: Claude Code and Codex permissions and plan limits on the island, Sign in with GitHub, Sentry,
+Vercel/Netlify/GitHub deploys, git and quick commands, Docker, and GitHub/Linear/Jira issues in your task list. Download the [latest release](https://github.com/Rudhery/cay/releases/latest) (`Cay-Setup.exe`).
 Windows 10 (2004) or 11. Free to use; the source code is not distributed. The app speaks English or Portuguese
 (automatic from Windows).
