@@ -24,18 +24,18 @@ E lá em cima mora um gato: os dois-pontos da hora viraram os olhos dele.
 
 ## O que ele faz
 
-- **Música de qualquer player** (Spotify, YouTube no navegador, Apple Music, VLC…): capa, letra sincronizada estilo
-  karaokê, barras que ouvem o som de verdade, controles e volume só do app que toca.
+- **Música de qualquer player** (Spotify, YouTube no navegador, Apple Music, VLC…): capa, letra sincronizada no jeito do
+  Apple Music (o verso firma do desfoque e as palavras acendem no ritmo), barras que ouvem o som de verdade, controles e volume só do app que toca.
 - **Notificações** com resposta, e **NextChat** direto na ilha.
 - **Busca estilo Spotlight** (`Win+Alt+Espaço`): apps, arquivos, contas, conversões, copiados e timer com nome
   ("10 min café").
 - **Prateleira de arquivos** com Quick Look, **histórico de copiados**, **conta-gotas**, **prévia do print** com cópia
   do texto, **nota rápida**.
 - **Timer e Pomodoro**, **próxima reunião** pela agenda, **chamada em andamento**, **downloads do navegador**,
-  **builds do GitHub** e **site vigiado** ao vivo.
+  **builds do GitHub** e **sites vigiados** ao vivo.
 - **Volume, Bluetooth, bateria, microfone e câmera em uso**, **não perturbe**, **clima**.
-- **Bolhas** que se separam da ilha para o que roda por trás (bateria do fone Bluetooth com qualquer áudio, timer,
-  builds de vários repositórios); passe o mouse numa bolha e abre a página dela, como a **página Bluetooth** com a
+- **Bolhas** que se separam da ilha, dos dois lados, para o que roda por trás (bateria do fone Bluetooth com qualquer
+  áudio, timer, builds, agentes de IA), com a música sempre na ilha; passe o mouse numa bolha e abre a página dela, como a **página Bluetooth** com a
   bateria de cada aparelho.
 - **Modo fio**: sobre janela maximizada, a ilha vira uma alça fina (ou só nos apps que você escolher).
 - **Personalização**: material sólido, fumê ou vidro, cor de destaque, inglês ou português.
@@ -47,7 +47,8 @@ E lá em cima mora um gato: os dois-pontos da hora viraram os olhos dele.
 ## Para devs
 
 - **Agentes de IA na ilha**: o Claude Code e o Codex pedem permissão na ilha (Negar/Permitir), as perguntas com
-  opções viram botões, e ela avisa quando terminam. Os **limites do plano** (5 horas e semana) ficam sempre à vista.
+  opções viram botões, e ela avisa quando terminam. Cada IA tem o seu logo (Claude laranja, Codex branco) e a sua
+  bolha, que gira enquanto trabalha, conta as sessões e mostra um ✓ ao terminar. Os **limites do plano** (5 horas e semana) ficam sempre à vista.
 - **GitHub**: **Entrar com GitHub** num clique (sem token para colar), seus PRs com os checks, revisões pedidas e o
   quadriculado de contribuições.
 - **Sentry**: erro novo ou que voltou aparece na hora, com Resolver e Ignorar.
