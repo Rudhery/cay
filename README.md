@@ -38,7 +38,8 @@ E lá em cima mora um gato: os dois-pontos da hora viraram os olhos dele.
   áudio, timer, builds, agentes de IA), com a música sempre na ilha; passe o mouse numa bolha e abre a página dela, como a **página Bluetooth** com a
   bateria de cada aparelho.
 - **Modo fio**: sobre janela maximizada, a ilha vira uma alça fina (ou só nos apps que você escolher).
-- **Personalização**: material sólido, fumê ou vidro, cor de destaque, inglês ou português.
+- **Personalização**: material sólido, fumê ou vidro, cor de destaque, inglês ou português. As configurações e o
+  menu da bandeja seguem o visual dos vídeos, e o menu mostra o que está na ilha agora.
 - **Navegação no topo**: passe o mouse e uma barra com ícones animados leva a qualquer página; o **Início** mostra o
   que importa agora e uma grade com o resto.
 - **Tarefas** com prazo ("amanhã 15h") e aviso na hora, **Pergunte ao Cay** (`Ctrl+Alt+Espaço`, qualquer modelo,
